@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Dumbbell, Users, Trophy } from "lucide-react";
 import heroImage from "@/assets/hero-basketball.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const HeroSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
@@ -17,19 +20,41 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 py-20 text-center">
-        <h1 className="text-5xl md:text-7xl font-black mb-6 text-primary-foreground animate-in fade-in slide-in-from-bottom-4 duration-1000">
-          Sole Workouts
+        <div className="inline-block mb-6 px-6 py-2 bg-primary/20 backdrop-blur-sm border border-primary/30 rounded-full text-primary-foreground font-semibold animate-in fade-in slide-in-from-bottom-4 duration-700">
+          Basketball & Performance Training
+        </div>
+        
+        <h1 className="text-6xl md:text-8xl font-black mb-6 text-primary-foreground animate-in fade-in slide-in-from-bottom-4 duration-1000 tracking-tight">
+          {t('heroTitle')}
         </h1>
-        <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto font-medium animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-150">
-          Professional basketball training from an ex-pro player. Build skills, elevate performance, achieve your goals.
+        
+        <p className="text-xl md:text-2xl text-primary-foreground/90 mb-10 max-w-3xl mx-auto font-medium animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-150 leading-relaxed">
+          {t('heroSubtitle')}
         </p>
+
+        {/* Key Features */}
+        <div className="flex flex-wrap justify-center gap-6 mb-10 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-200">
+          <div className="flex items-center gap-2 bg-card/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary-foreground/20">
+            <Trophy className="w-5 h-5 text-primary" />
+            <span className="text-primary-foreground font-medium">Ex-Professional Player</span>
+          </div>
+          <div className="flex items-center gap-2 bg-card/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary-foreground/20">
+            <Dumbbell className="w-5 h-5 text-primary" />
+            <span className="text-primary-foreground font-medium">Performance Training</span>
+          </div>
+          <div className="flex items-center gap-2 bg-card/10 backdrop-blur-sm px-4 py-2 rounded-full border border-primary-foreground/20">
+            <Users className="w-5 h-5 text-primary" />
+            <span className="text-primary-foreground font-medium">Individual & Group</span>
+          </div>
+        </div>
+        
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300">
-          <Button variant="hero" size="xl" className="group">
-            Start Your Journey
+          <Button variant="hero" size="xl" className="group text-lg">
+            {t('startJourney')}
             <ArrowRight className="group-hover:translate-x-1 transition-transform" />
           </Button>
-          <Button variant="accent" size="xl">
-            View Programs
+          <Button variant="accent" size="xl" className="text-lg">
+            {t('viewPrograms')}
           </Button>
         </div>
       </div>
