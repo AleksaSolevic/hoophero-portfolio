@@ -12,14 +12,26 @@ const AboutSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black mb-6 text-foreground">
-            Transform Performance Through Excellence
+            About Me
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Originally from Serbia, I've competed as a professional basketball player at various levels in Sweden 
-            and internationally. Now, I channel that experience into developing comprehensive training programs that 
-            enhance skills, boost performance, and build confidence. My proven methodology combines real-world 
-            competitive expertise with personalized attention to help you reach your goals.
-          </p>
+          <div className="space-y-4 text-lg text-muted-foreground leading-relaxed text-left">
+            <p>
+              Originally from Serbia, I've dedicated my life to basketball. My professional career took me across 
+              Sweden and internationally, where I competed at various levels and learned what it truly takes to 
+              succeed in this demanding sport.
+            </p>
+            <p>
+              Through years of high-level competition, I developed a deep understanding of the mental and physical 
+              requirements needed to excel. I've experienced the pressure of crucial games, the discipline of 
+              professional training, and the strategic thinking required to outperform opponents.
+            </p>
+            <p>
+              Now, I channel all that experience into helping athletes reach their full potential. Whether you're 
+              just starting out or aiming for professional levels, I bring real-world insights and proven training 
+              methods to help you elevate your game. My approach combines technical skill development, conditioning, 
+              mental preparation, and the competitive mindset needed to succeed.
+            </p>
+          </div>
         </div>
 
         {/* Stats Grid */}

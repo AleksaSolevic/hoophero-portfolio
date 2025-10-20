@@ -99,7 +99,7 @@ const ProgramsSection = () => {
                   variant={program.popular ? "hero" : "default"} 
                   className="w-full"
                   size="lg"
-                  onClick={() => window.location.href = 'mailto:coach@elitebasketball.com'}
+                  onClick={() => window.location.href = 'mailto:contact@soleworkouts.com'}
                 >
                   Contact Me
                 </Button>
