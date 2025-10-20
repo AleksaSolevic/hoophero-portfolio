@@ -8,10 +8,7 @@ const ProgramsSection = () => {
     {
       name: "Youth Development",
       description: "Ages 8-14",
-      price: "$150",
-      duration: "per month",
       features: [
-        "2 sessions per week",
         "Fundamental skills training",
         "Age-appropriate conditioning",
         "Character development",
@@ -22,10 +19,7 @@ const ProgramsSection = () => {
     {
       name: "Elite Skills",
       description: "High School & College",
-      price: "$250",
-      duration: "per month",
       features: [
-        "3 sessions per week",
         "Advanced skill development",
         "Strength & conditioning",
         "Video analysis included",
@@ -37,14 +31,10 @@ const ProgramsSection = () => {
     {
       name: "Professional",
       description: "Pro & Semi-Pro",
-      price: "Custom",
-      duration: "pricing",
       features: [
-        "Unlimited sessions",
         "Personalized training plan",
         "Nutrition guidance",
         "Mental performance coaching",
-        "24/7 support access",
         "Contract negotiation prep",
       ],
       popular: false,
@@ -85,15 +75,11 @@ const ProgramsSection = () => {
                   Most Popular
                 </div>
               )}
-              <CardHeader className="text-center pb-8 pt-10">
+               <CardHeader className="text-center pb-8 pt-10">
                 <CardTitle className="text-2xl mb-2">{program.name}</CardTitle>
-                <CardDescription className="text-muted-foreground mb-4">
+                <CardDescription className="text-muted-foreground">
                   {program.description}
                 </CardDescription>
-                <div className="flex items-baseline justify-center gap-1">
-                  <span className="text-4xl font-black text-foreground">{program.price}</span>
-                  <span className="text-muted-foreground">/{program.duration}</span>
-                </div>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
@@ -105,13 +91,17 @@ const ProgramsSection = () => {
                   ))}
                 </ul>
               </CardContent>
-              <CardFooter className="pt-6">
+              <CardFooter className="pt-6 flex-col gap-3">
+                <p className="text-sm text-muted-foreground text-center">
+                  Email for pricing and schedule details
+                </p>
                 <Button 
                   variant={program.popular ? "hero" : "default"} 
                   className="w-full"
                   size="lg"
+                  onClick={() => window.location.href = 'mailto:coach@elitebasketball.com'}
                 >
-                  Get Started
+                  Contact Me
                 </Button>
               </CardFooter>
             </Card>

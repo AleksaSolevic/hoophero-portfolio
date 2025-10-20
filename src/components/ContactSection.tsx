@@ -78,8 +78,15 @@ const ContactSection = () => {
                       <Phone className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-foreground mb-1">Phone</h3>
-                      <p className="text-muted-foreground">(555) 123-4567</p>
+                      <h3 className="font-bold text-foreground mb-1">WhatsApp</h3>
+                      <a 
+                        href="https://wa.me/5551234567" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        +46 (555) 123-4567
+                      </a>
                     </div>
                   </div>
                 </CardContent>

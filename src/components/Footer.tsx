@@ -1,4 +1,5 @@
-import { Instagram, Twitter, Facebook, Linkedin } from "lucide-react";
+import { Instagram, MessageCircle } from "lucide-react";
+import { SiTiktok } from "react-icons/si";
 
 const Footer = () => {
   return (
@@ -12,32 +13,31 @@ const Footer = () => {
 
           <div className="flex gap-4">
             <a 
-              href="#" 
+              href="https://instagram.com" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-secondary-foreground/10 hover:bg-primary flex items-center justify-center transition-all hover:scale-110"
               aria-label="Instagram"
             >
               <Instagram className="w-5 h-5" />
             </a>
             <a 
-              href="#" 
+              href="https://tiktok.com" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-secondary-foreground/10 hover:bg-primary flex items-center justify-center transition-all hover:scale-110"
-              aria-label="Twitter"
+              aria-label="TikTok"
             >
-              <Twitter className="w-5 h-5" />
+              <SiTiktok className="w-4 h-4" />
             </a>
             <a 
-              href="#" 
+              href="https://wa.me/5551234567" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-secondary-foreground/10 hover:bg-primary flex items-center justify-center transition-all hover:scale-110"
-              aria-label="Facebook"
+              aria-label="WhatsApp"
             >
-              <Facebook className="w-5 h-5" />
-            </a>
-            <a 
-              href="#" 
-              className="w-10 h-10 rounded-full bg-secondary-foreground/10 hover:bg-primary flex items-center justify-center transition-all hover:scale-110"
-              aria-label="LinkedIn"
-            >
-              <Linkedin className="w-5 h-5" />
+              <MessageCircle className="w-5 h-5" />
             </a>
           </div>
         </div>

@@ -15,9 +15,10 @@ const AboutSection = () => {
             Transform Performance Through Excellence
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            With over a decade of experience coaching athletes at all levels, I specialize in developing 
-            comprehensive training programs that enhance skills, boost performance, and build confidence. 
-            My proven methodology combines technical expertise with personalized attention to help you reach your goals.
+            Originally from Serbia, I've competed as a professional basketball player at various levels in Sweden 
+            and internationally. Now, I channel that experience into developing comprehensive training programs that 
+            enhance skills, boost performance, and build confidence. My proven methodology combines real-world 
+            competitive expertise with personalized attention to help you reach your goals.
           </p>
         </div>
 
