@@ -4,18 +4,21 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, Phone, MapPin } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const ContactSection = () => {
+  const { t } = useLanguage();
+  
   return (
     <section className="py-24 bg-gradient-secondary">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black mb-4 text-secondary-foreground">
-              Ready to Get Started?
+              {t('contactTitle')}
             </h2>
             <p className="text-lg text-secondary-foreground/80 max-w-2xl mx-auto">
-              Take the first step toward reaching your basketball goals. Contact me today for a free consultation.
+              {t('contactSubtitle')}
             </p>
           </div>
 
@@ -23,33 +26,33 @@ const ContactSection = () => {
             {/* Contact Form */}
             <Card className="border-border">
               <CardHeader>
-                <CardTitle className="text-2xl">Send a Message</CardTitle>
-                <CardDescription>Fill out the form and I'll get back to you within 24 hours</CardDescription>
+                <CardTitle className="text-2xl">{t('sendMessage')}</CardTitle>
+                <CardDescription>{t('formDesc')}</CardDescription>
               </CardHeader>
               <CardContent>
                 <form className="space-y-4">
                   <div className="space-y-2">
-                    <Label htmlFor="name">Name</Label>
-                    <Input id="name" placeholder="Your name" />
+                    <Label htmlFor="name">{t('name')}</Label>
+                    <Input id="name" placeholder={t('yourName')} />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="email">Email</Label>
-                    <Input id="email" type="email" placeholder="your.email@example.com" />
+                    <Label htmlFor="email">{t('email')}</Label>
+                    <Input id="email" type="email" placeholder={t('yourEmail')} />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="phone">Phone</Label>
-                    <Input id="phone" type="tel" placeholder="(555) 123-4567" />
+                    <Label htmlFor="phone">{t('phone')}</Label>
+                    <Input id="phone" type="tel" placeholder={t('whatsapp')} />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
+                    <Label htmlFor="message">{t('message')}</Label>
                     <Textarea 
                       id="message" 
-                      placeholder="Tell me about your goals and experience level..."
+                      placeholder={t('messageText')}
                       rows={4}
                     />
                   </div>
                   <Button variant="hero" className="w-full" size="lg">
-                    Send Message
+                    {t('send')}
                   </Button>
                 </form>
               </CardContent>
@@ -64,7 +67,7 @@ const ContactSection = () => {
                       <Mail className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-foreground mb-1">Email</h3>
+                      <h3 className="font-bold text-foreground mb-1">{t('email')}</h3>
                       <p className="text-muted-foreground">contact@soleworkouts.com</p>
                     </div>
                   </div>
@@ -78,7 +81,7 @@ const ContactSection = () => {
                       <Phone className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-foreground mb-1">WhatsApp</h3>
+                      <h3 className="font-bold text-foreground mb-1">{t('whatsapp')}</h3>
                       <a 
                         href="https://wa.me/5551234567" 
                         target="_blank"
@@ -99,7 +102,7 @@ const ContactSection = () => {
                       <MapPin className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-foreground mb-1">Training Facility</h3>
+                      <h3 className="font-bold text-foreground mb-1">{t('trainingFacility')}</h3>
                       <p className="text-muted-foreground">123 Championship Drive<br />Basketball City, BC 12345</p>
                     </div>
                   </div>
@@ -108,11 +111,11 @@ const ContactSection = () => {
 
               <Card className="bg-gradient-primary border-0">
                 <CardContent className="pt-6">
-                  <h3 className="font-bold text-primary-foreground mb-2">Office Hours</h3>
+                  <h3 className="font-bold text-primary-foreground mb-2">{t('officeHours')}</h3>
                   <div className="space-y-1 text-primary-foreground/90">
-                    <p>Monday - Friday: 6:00 AM - 8:00 PM</p>
-                    <p>Saturday: 8:00 AM - 6:00 PM</p>
-                    <p>Sunday: By Appointment</p>
+                    <p>{t('monday')}</p>
+                    <p>{t('saturday')}</p>
+                    <p>{t('sunday')}</p>
                   </div>
                 </CardContent>
               </Card>

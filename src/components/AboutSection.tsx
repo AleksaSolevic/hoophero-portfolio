@@ -1,36 +1,43 @@
 import { Award, Target, TrendingUp } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import heroBasketball from "@/assets/hero-basketball.jpg";
 
 const AboutSection = () => {
+  const { t } = useLanguage();
+  
   const stats = [
-    { icon: Award, value: "10+", label: "Years Experience" },
-    { icon: Target, value: "500+", label: "Athletes Trained" },
-    { icon: TrendingUp, value: "95%", label: "Success Rate" },
+    { icon: Award, value: "10+", label: t('yearsExp') },
+    { icon: Target, value: "500+", label: t('athletesTrained') },
+    { icon: TrendingUp, value: "95%", label: t('successRate') },
   ];
 
   return (
     <section className="py-24 bg-muted">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black mb-6 text-foreground">
-            About Me
+        <div className="max-w-5xl mx-auto mb-16">
+          <h2 className="text-4xl md:text-5xl font-black mb-12 text-foreground text-center">
+            {t('aboutTitle')}
           </h2>
-          <div className="space-y-4 text-lg text-muted-foreground leading-relaxed text-left">
-            <p>
-              Originally from Serbia, I've dedicated my life to basketball. My professional career took me across 
-              Sweden and internationally, where I competed at various levels and learned what it truly takes to 
-              succeed in this demanding sport.
-            </p>
-            <p>
-              Through years of high-level competition, I developed a deep understanding of the mental and physical 
-              requirements needed to excel. I've experienced the pressure of crucial games, the discipline of 
-              professional training, and the strategic thinking required to outperform opponents.
-            </p>
-            <p>
-              Now, I channel all that experience into helping athletes reach their full potential. Whether you're 
-              just starting out or aiming for professional levels, I bring real-world insights and proven training 
-              methods to help you elevate your game. My approach combines technical skill development, conditioning, 
-              mental preparation, and the competitive mindset needed to succeed.
-            </p>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
+            {/* Profile Image */}
+            <div className="lg:col-span-2">
+              <div className="relative rounded-2xl overflow-hidden shadow-elegant border-4 border-primary/20">
+                <img 
+                  src={heroBasketball}
+                  alt="Professional basketball player"
+                  className="w-full h-full object-cover aspect-[3/4]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+              </div>
+            </div>
+            
+            {/* Bio Text */}
+            <div className="lg:col-span-3 space-y-4 text-lg text-muted-foreground leading-relaxed">
+              <p>{t('aboutP1')}</p>
+              <p>{t('aboutP2')}</p>
+              <p>{t('aboutP3')}</p>
+            </div>
           </div>
         </div>
 

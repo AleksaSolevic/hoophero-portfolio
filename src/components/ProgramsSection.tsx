@@ -2,40 +2,43 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check } from "lucide-react";
 import trainingEquipment from "@/assets/training-equipment.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const ProgramsSection = () => {
+  const { t } = useLanguage();
+  
   const programs = [
     {
-      name: "Youth Development",
-      description: "Ages 8-14",
+      name: t('youth'),
+      description: t('youthAge'),
       features: [
-        "Fundamental skills training",
-        "Age-appropriate conditioning",
-        "Character development",
-        "Parent progress reports",
+        t('fundamental'),
+        t('conditioning'),
+        t('character'),
+        t('reports'),
       ],
       popular: false,
     },
     {
-      name: "Elite Skills",
-      description: "High School & College",
+      name: t('elite'),
+      description: t('eliteAge'),
       features: [
-        "Advanced skill development",
-        "Strength & conditioning",
-        "Video analysis included",
-        "College prep support",
-        "Tournament preparation",
+        t('advanced'),
+        t('strength'),
+        t('video'),
+        t('collegePrep'),
+        t('tournament'),
       ],
       popular: true,
     },
     {
-      name: "Professional",
-      description: "Pro & Semi-Pro",
+      name: t('professional'),
+      description: t('proAge'),
       features: [
-        "Personalized training plan",
-        "Nutrition guidance",
-        "Mental performance coaching",
-        "Contract negotiation prep",
+        t('personalized'),
+        t('nutrition'),
+        t('mental'),
+        t('contract'),
       ],
       popular: false,
     },
@@ -55,10 +58,10 @@ const ProgramsSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black mb-4 text-foreground">
-            Training Programs
+            {t('programsTitle')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Choose the program that fits your goals and commitment level
+            {t('programsSubtitle')}
           </p>
         </div>
 
@@ -72,7 +75,7 @@ const ProgramsSection = () => {
             >
               {program.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-6 py-1 rounded-full text-sm font-bold">
-                  Most Popular
+                  {t('mostPopular')}
                 </div>
               )}
                <CardHeader className="text-center pb-8 pt-10">
@@ -93,7 +96,7 @@ const ProgramsSection = () => {
               </CardContent>
               <CardFooter className="pt-6 flex-col gap-3">
                 <p className="text-sm text-muted-foreground text-center">
-                  Email for pricing and schedule details
+                  {t('emailPricing')}
                 </p>
                 <Button 
                   variant={program.popular ? "hero" : "default"} 
@@ -101,7 +104,7 @@ const ProgramsSection = () => {
                   size="lg"
                   onClick={() => window.location.href = 'mailto:contact@soleworkouts.com'}
                 >
-                  Contact Me
+                  {t('contactMe')}
                 </Button>
               </CardFooter>
             </Card>

@@ -1,14 +1,17 @@
 import { Instagram, MessageCircle } from "lucide-react";
 import { SiTiktok } from "react-icons/si";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Footer = () => {
+  const { t } = useLanguage();
+  
   return (
     <footer className="bg-secondary text-secondary-foreground py-12">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
-            <h3 className="text-2xl font-black mb-2">Sole Workouts</h3>
-            <p className="text-secondary-foreground/80">Professional Basketball Training</p>
+            <h3 className="text-2xl font-black mb-2">{t('heroTitle')}</h3>
+            <p className="text-secondary-foreground/80">{t('footerTagline')}</p>
           </div>
 
           <div className="flex gap-4">
@@ -43,7 +46,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-secondary-foreground/20 mt-8 pt-8 text-center text-sm text-secondary-foreground/60">
-          <p>&copy; {new Date().getFullYear()} Sole Workouts. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} {t('heroTitle')}. {t('copyright')}</p>
         </div>
       </div>
     </footer>
