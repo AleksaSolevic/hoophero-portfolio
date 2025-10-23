@@ -10,6 +10,12 @@ interface LanguageContextType {
 
 const translations = {
   en: {
+    // Navbar
+    navStory: "My Story",
+    navMethod: "My Method",
+    navServices: "Services",
+    navContact: "Contact",
+    
     // Hero
     heroTitle: "Sole Workouts",
     heroSubtitle: "Professional basketball and performance training from an ex-pro player. Build skills, elevate performance, achieve your goals.",
@@ -83,6 +89,22 @@ const translations = {
     customizedApproachDesc: "Every training session is designed specifically for your age and skill level. Whether you're just starting out or aiming for professional play, the approach is customized to help you reach your goals.",
     backHome: "Back to Home",
     
+    // Method Section
+    methodTitle: "My Method",
+    methodSubtitle: "A proven approach combining basketball expertise with performance science",
+    methodIntro: "My training philosophy is built on years of professional experience and a deep understanding of what it takes to succeed at the highest levels. Every session is purposefully designed to develop not just skills, but complete players who understand the game, can execute under pressure, and continuously improve. I focus on the details that separate good players from great ones, combining technical precision with mental toughness and physical conditioning.",
+    methodPillar1: "Technical Mastery",
+    methodPillar1Desc: "Breaking down every aspect of basketball technique - from shooting mechanics to footwork patterns. We focus on the finest details that create consistency and excellence in your game.",
+    methodPillar2: "Basketball IQ",
+    methodPillar2Desc: "Understanding the game at a deeper level. Learn to read defenses, make quick decisions, and develop the court awareness that separates elite players from the rest.",
+    methodPillar3: "Physical Performance",
+    methodPillar3Desc: "Building the strength, agility, and conditioning required for high-level basketball. Training programs designed specifically for basketball movements and demands.",
+    methodPillar4: "Mental Preparation",
+    methodPillar4Desc: "Developing the competitive mindset, focus, and resilience needed to perform under pressure. Learn the mental approach that drives success at professional levels.",
+    methodVideoTitle: "See My Training Philosophy in Action",
+    methodVideoDesc: "Watch training sessions and learn more about how I develop complete basketball players.",
+    methodVideoPlaceholder: "YouTube video embed area - Add your training videos here",
+    
     // Programs
     programsTitle: "Training Programs",
     programsSubtitle: "Choose the program that fits your goals and commitment level",
@@ -135,6 +157,12 @@ const translations = {
     contract: "Contract negotiation prep",
   },
   sv: {
+    // Navbar
+    navStory: "Min Historia",
+    navMethod: "Min Metod",
+    navServices: "Tjänster",
+    navContact: "Kontakt",
+    
     // Hero
     heroTitle: "Sole Workouts",
     heroSubtitle: "Professionell basket- och prestationsträning från en tidigare professionell spelare. Utveckla färdigheter, förbättra prestationer, uppnå dina mål.",
@@ -207,6 +235,22 @@ const translations = {
     customizedApproach: "Anpassad Till Din Nivå",
     customizedApproachDesc: "Varje träningspass är utformat specifikt för din ålder och färdighetsnivå. Oavsett om du precis börjar eller siktar på professionellt spel, anpassas metoden för att hjälpa dig nå dina mål.",
     backHome: "Tillbaka Till Hem",
+    
+    // Method Section
+    methodTitle: "Min Metod",
+    methodSubtitle: "En beprövad metod som kombinerar basketexpertis med prestationsvetenskap",
+    methodIntro: "Min träningsfilosofi bygger på år av professionell erfarenhet och en djup förståelse för vad som krävs för att lyckas på de högsta nivåerna. Varje träningspass är målmedvetet utformat för att utveckla inte bara färdigheter, utan kompletta spelare som förstår spelet, kan prestera under press och kontinuerligt förbättras. Jag fokuserar på detaljerna som skiljer bra spelare från fantastiska, och kombinerar teknisk precision med mental styrka och fysisk kondition.",
+    methodPillar1: "Tekniskt Mästerskap",
+    methodPillar1Desc: "Bryta ner varje aspekt av basketteknik - från skottmekanik till fotarbetsmönster. Vi fokuserar på de finaste detaljerna som skapar konsistens och excellens i ditt spel.",
+    methodPillar2: "Basket-IQ",
+    methodPillar2Desc: "Förstå spelet på en djupare nivå. Lär dig läsa försvar, fatta snabba beslut och utveckla den planmedvetenhet som skiljer elitspelare från resten.",
+    methodPillar3: "Fysisk Prestation",
+    methodPillar3Desc: "Bygga styrka, smidighet och kondition som krävs för basket på hög nivå. Träningsprogram utformade specifikt för basketrörelser och krav.",
+    methodPillar4: "Mental Förberedelse",
+    methodPillar4Desc: "Utveckla det konkurrensinriktade tänkesättet, fokus och motståndskraft som behövs för att prestera under press. Lär dig det mentala förhållningssätt som driver framgång på professionell nivå.",
+    methodVideoTitle: "Se Min Träningsfilosofi i Praktiken",
+    methodVideoDesc: "Titta på träningspass och lär dig mer om hur jag utvecklar kompletta basketspelare.",
+    methodVideoPlaceholder: "YouTube-videoinbäddningsområde - Lägg till dina träningsvideor här",
     
     // Programs
     programsTitle: "Träningsprogram",
