@@ -36,7 +36,6 @@ const ProgramsSection = () => {
       description: t('proAge'),
       features: [
         t('personalized'),
-        t('nutrition'),
         t('mental'),
         t('contract'),
       ],

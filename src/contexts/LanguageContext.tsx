@@ -22,11 +22,6 @@ const translations = {
     aboutP2: "Through years of high-level competition, I developed a deep understanding of the mental and physical requirements needed to excel. I've experienced the pressure of crucial games, the discipline of professional training, and the strategic thinking required to outperform opponents.",
     aboutP3: "Now, I channel all that experience into helping athletes reach their full potential. Whether you're just starting out or aiming for professional levels, I bring real-world insights and proven training methods to help you elevate your game. My approach combines technical skill development, conditioning, mental preparation, and the competitive mindset needed to succeed.",
     
-    // Stats
-    yearsExp: "Years Experience",
-    athletesTrained: "Athletes Trained",
-    successRate: "Success Rate",
-    
     // Services
     servicesTitle: "Training Services",
     servicesSubtitle: "Comprehensive basketball and performance training tailored to your goals",
@@ -136,7 +131,6 @@ const translations = {
     collegePrep: "College prep support",
     tournament: "Tournament preparation",
     personalized: "Personalized training plan",
-    nutrition: "Nutrition guidance",
     mental: "Mental performance coaching",
     contract: "Contract negotiation prep",
   },
@@ -152,11 +146,6 @@ const translations = {
     aboutP1: "Ursprungligen från Serbien har jag ägnat mitt liv åt basket. Min professionella karriär tog mig över Sverige och internationellt, där jag tävlade på olika nivåer och lärde mig vad som verkligen krävs för att lyckas i denna krävande sport.",
     aboutP2: "Genom år av tävling på hög nivå utvecklade jag en djup förståelse för de mentala och fysiska krav som krävs för att utmärka sig. Jag har upplevt pressen i avgörande matcher, disciplinen i professionell träning och det strategiska tänkande som krävs för att överträffa motståndare.",
     aboutP3: "Nu kanaliserar jag all den erfarenheten till att hjälpa idrottare nå sin fulla potential. Oavsett om du just börjar eller siktar på professionell nivå, tar jag med verkliga insikter och beprövade träningsmetoder för att hjälpa dig höja ditt spel. Min metod kombinerar teknisk färdighetsutveckling, konditionsträning, mental förberedelse och det konkurrensinriktade mindset som krävs för att lyckas.",
-    
-    // Stats
-    yearsExp: "Års Erfarenhet",
-    athletesTrained: "Tränade Atleter",
-    successRate: "Framgångsgrad",
     
     // Services
     servicesTitle: "Träningstjänster",
@@ -267,7 +256,6 @@ const translations = {
     collegePrep: "Förberedelse för högskola",
     tournament: "Turneringsförberedelse",
     personalized: "Personlig träningsplan",
-    nutrition: "Näringsvägledning",
     mental: "Mental prestationscoachning",
     contract: "Kontraktsförhandlings förberedelse",
   },
