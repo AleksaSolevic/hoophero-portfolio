@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
@@ -8,17 +14,17 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 const ContactSection = () => {
   const { t } = useLanguage();
-  
+
   return (
     <section className="py-24 bg-gradient-secondary">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black mb-4 text-secondary-foreground">
-              {t('contactTitle')}
+              {t("contactTitle")}
             </h2>
             <p className="text-lg text-secondary-foreground/80 max-w-2xl mx-auto">
-              {t('contactSubtitle')}
+              {t("contactSubtitle")}
             </p>
           </div>
 
@@ -26,33 +32,37 @@ const ContactSection = () => {
             {/* Contact Form */}
             <Card className="border-border">
               <CardHeader>
-                <CardTitle className="text-2xl">{t('sendMessage')}</CardTitle>
-                <CardDescription>{t('formDesc')}</CardDescription>
+                <CardTitle className="text-2xl">{t("sendMessage")}</CardTitle>
+                <CardDescription>{t("formDesc")}</CardDescription>
               </CardHeader>
               <CardContent>
                 <form className="space-y-4">
                   <div className="space-y-2">
-                    <Label htmlFor="name">{t('name')}</Label>
-                    <Input id="name" placeholder={t('yourName')} />
+                    <Label htmlFor="name">{t("name")}</Label>
+                    <Input id="name" placeholder={t("yourName")} />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="email">{t('email')}</Label>
-                    <Input id="email" type="email" placeholder={t('yourEmail')} />
+                    <Label htmlFor="email">{t("email")}</Label>
+                    <Input
+                      id="email"
+                      type="email"
+                      placeholder={t("yourEmail")}
+                    />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="phone">{t('phone')}</Label>
-                    <Input id="phone" type="tel" placeholder={t('whatsapp')} />
+                    <Label htmlFor="phone">{t("phone")}</Label>
+                    <Input id="phone" type="tel" placeholder={t("whatsapp")} />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="message">{t('message')}</Label>
-                    <Textarea 
-                      id="message" 
-                      placeholder={t('messageText')}
+                    <Label htmlFor="message">{t("message")}</Label>
+                    <Textarea
+                      id="message"
+                      placeholder={t("messageText")}
                       rows={4}
                     />
                   </div>
                   <Button variant="hero" className="w-full" size="lg">
-                    {t('send')}
+                    {t("send")}
                   </Button>
                 </form>
               </CardContent>
@@ -67,8 +77,12 @@ const ContactSection = () => {
                       <Mail className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-foreground mb-1">{t('email')}</h3>
-                      <p className="text-muted-foreground">contact@soleworkouts.com</p>
+                      <h3 className="font-bold text-foreground mb-1">
+                        {t("email")}
+                      </h3>
+                      <p className="text-muted-foreground">
+                        sole.performance25@gmail.com.com
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -81,14 +95,16 @@ const ContactSection = () => {
                       <Phone className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-foreground mb-1">{t('whatsapp')}</h3>
-                      <a 
-                        href="https://wa.me/5551234567" 
+                      <h3 className="font-bold text-foreground mb-1">
+                        {t("whatsapp")}
+                      </h3>
+                      <a
+                        href="https://wa.me/5551234567"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        +46 (555) 123-4567
+                        +46 736348728
                       </a>
                     </div>
                   </div>
@@ -102,8 +118,14 @@ const ContactSection = () => {
                       <MapPin className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-foreground mb-1">{t('trainingFacility')}</h3>
-                      <p className="text-muted-foreground">123 Championship Drive<br />Basketball City, BC 12345</p>
+                      <h3 className="font-bold text-foreground mb-1">
+                        {t("trainingFacility")}
+                      </h3>
+                      <p className="text-muted-foreground">
+                        123 Championship Drive
+                        <br />
+                        Basketball City, BC 12345
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -111,11 +133,13 @@ const ContactSection = () => {
 
               <Card className="bg-gradient-primary border-0">
                 <CardContent className="pt-6">
-                  <h3 className="font-bold text-primary-foreground mb-2">{t('officeHours')}</h3>
+                  <h3 className="font-bold text-primary-foreground mb-2">
+                    {t("PhoneHours")}
+                  </h3>
                   <div className="space-y-1 text-primary-foreground/90">
-                    <p>{t('monday')}</p>
-                    <p>{t('saturday')}</p>
-                    <p>{t('sunday')}</p>
+                    <p>{t("monday")}</p>
+                    <p>{t("saturday")}</p>
+                    <p>{t("sunday")}</p>
                   </div>
                 </CardContent>
               </Card>
