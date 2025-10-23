@@ -49,13 +49,17 @@ const HeroSection = () => {
         </div>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300">
-          <Button variant="hero" size="xl" className="group text-lg">
-            {t('startJourney')}
-            <ArrowRight className="group-hover:translate-x-1 transition-transform" />
-          </Button>
-          <Button variant="accent" size="xl" className="text-lg">
-            {t('viewPrograms')}
-          </Button>
+          <a href="#contact">
+            <Button variant="hero" size="xl" className="group text-lg">
+              {t('startJourney')}
+              <ArrowRight className="group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </a>
+          <a href="#services">
+            <Button variant="accent" size="xl" className="text-lg">
+              {t('viewPrograms')}
+            </Button>
+          </a>
         </div>
       </div>
 

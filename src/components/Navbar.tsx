@@ -3,6 +3,7 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "./ui/button";
+import ThemeColorSwitcher from "./ThemeColorSwitcher";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -91,6 +92,9 @@ const Navbar = () => {
             >
               {language === "en" ? "SV" : "EN"}
             </Button>
+            
+            {/* Theme Color Switcher */}
+            <ThemeColorSwitcher />
           </div>
 
           {/* Mobile Menu Button */}
@@ -130,14 +134,17 @@ const Navbar = () => {
               >
                 {t("navContact")}
               </button>
-              <Button
-                onClick={toggleLanguage}
-                variant="outline"
-                size="sm"
-                className="w-fit font-semibold"
-              >
-                {language === "en" ? "SV" : "EN"}
-              </Button>
+              <div className="flex items-center gap-2">
+                <Button
+                  onClick={toggleLanguage}
+                  variant="outline"
+                  size="sm"
+                  className="w-fit font-semibold"
+                >
+                  {language === "en" ? "SV" : "EN"}
+                </Button>
+                <ThemeColorSwitcher />
+              </div>
             </div>
           </div>
         )}

@@ -67,20 +67,6 @@ const MethodSection = () => {
             ))}
           </div>
 
-          {/* Video/Media Section Placeholder */}
-          <div className="mt-16 bg-muted rounded-lg p-12 text-center">
-            <h3 className="text-2xl font-bold text-foreground mb-4">
-              {t("methodVideoTitle")}
-            </h3>
-            <p className="text-muted-foreground mb-8">
-              {t("methodVideoDesc")}
-            </p>
-            <div className="aspect-video bg-secondary/20 rounded-lg flex items-center justify-center">
-              <p className="text-muted-foreground">
-                {t("methodVideoPlaceholder")}
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
