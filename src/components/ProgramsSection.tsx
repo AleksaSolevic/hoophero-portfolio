@@ -44,7 +44,7 @@ const ProgramsSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-muted relative overflow-hidden">
+    <section className="py-24 bg-secondary relative overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 opacity-5">
         <img 
@@ -56,10 +56,10 @@ const ProgramsSection = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black mb-4 text-foreground">
+          <h2 className="text-4xl md:text-5xl font-black mb-4 text-secondary-foreground">
             {t('programsTitle')}
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-secondary-foreground/80 max-w-2xl mx-auto">
             {t('programsSubtitle')}
           </p>
         </div>
@@ -68,7 +68,7 @@ const ProgramsSection = () => {
           {programs.map((program, index) => (
             <Card 
               key={index} 
-              className={`relative hover:shadow-elegant transition-all duration-300 ${
+              className={`relative hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 ${
                 program.popular ? 'border-primary border-2 shadow-glow' : 'border-border'
               }`}
             >
@@ -86,25 +86,26 @@ const ProgramsSection = () => {
               <CardContent>
                 <ul className="space-y-3">
                   {program.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-3">
-                      <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" strokeWidth={3} />
+                    <li key={idx} className="flex items-start gap-3 group">
+                      <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" strokeWidth={3} />
                       <span className="text-sm text-foreground">{feature}</span>
                     </li>
                   ))}
                 </ul>
               </CardContent>
-              <CardFooter className="pt-6 flex-col gap-3">
+               <CardFooter className="pt-6 flex-col gap-3">
                 <p className="text-sm text-muted-foreground text-center">
                   {t('emailPricing')}
                 </p>
-                <Button 
-                  variant={program.popular ? "hero" : "default"} 
-                  className="w-full"
-                  size="lg"
-                  onClick={() => window.location.href = 'mailto:contact@soleworkouts.com'}
-                >
-                  {t('contactMe')}
-                </Button>
+                <a href="#contact" className="w-full">
+                  <Button 
+                    variant={program.popular ? "hero" : "default"} 
+                    className="w-full"
+                    size="lg"
+                  >
+                    {t('contactMe')}
+                  </Button>
+                </a>
               </CardFooter>
             </Card>
           ))}

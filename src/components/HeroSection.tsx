@@ -49,14 +49,14 @@ const HeroSection = () => {
         </div>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300">
-          <a href="#contact">
-            <Button variant="hero" size="xl" className="group text-lg">
+          <a href="#contact" className="group">
+            <Button variant="hero" size="xl" className="text-lg w-full sm:w-auto">
               {t('startJourney')}
               <ArrowRight className="group-hover:translate-x-1 transition-transform" />
             </Button>
           </a>
           <a href="#services">
-            <Button variant="accent" size="xl" className="text-lg">
+            <Button variant="outline" size="xl" className="text-lg w-full sm:w-auto border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
               {t('viewPrograms')}
             </Button>
           </a>

@@ -16,14 +16,14 @@ const ContactSection = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-24 bg-gradient-secondary">
+    <section className="py-24 bg-muted">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black mb-4 text-secondary-foreground">
+            <h2 className="text-4xl md:text-5xl font-black mb-4 text-foreground">
               {t("contactTitle")}
             </h2>
-            <p className="text-lg text-secondary-foreground/80 max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               {t("contactSubtitle")}
             </p>
           </div>
@@ -61,7 +61,7 @@ const ContactSection = () => {
                       rows={4}
                     />
                   </div>
-                  <Button variant="hero" className="w-full" size="lg">
+                  <Button type="submit" variant="default" className="w-full" size="lg">
                     {t("send")}
                   </Button>
                 </form>
@@ -131,10 +131,10 @@ const ContactSection = () => {
                 </CardContent>
               </Card>
 
-              <Card className="bg-gradient-primary border-0">
+              <Card className="bg-primary border-0">
                 <CardContent className="pt-6">
                   <h3 className="font-bold text-primary-foreground mb-2">
-                    {t("PhoneHours")}
+                    {t("officeHours")}
                   </h3>
                   <div className="space-y-1 text-primary-foreground/90">
                     <p>{t("monday")}</p>

@@ -28,7 +28,7 @@ const MethodSection = () => {
   ];
 
   return (
-    <section id="method" className="py-24 bg-background">
+    <section id="method" className="py-24 bg-muted">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-black mb-6 text-foreground text-center">
@@ -39,7 +39,7 @@ const MethodSection = () => {
           </p>
 
           {/* Main Method Description */}
-          <div className="mb-16 space-y-6 text-lg text-muted-foreground leading-relaxed max-w-4xl mx-auto">
+          <div className="mb-16 space-y-6 text-lg text-muted-foreground leading-relaxed max-w-4xl mx-auto text-center">
             <p>{t("methodIntro")}</p>
           </div>
 
@@ -48,11 +48,11 @@ const MethodSection = () => {
             {pillars.map((pillar, index) => (
               <div
                 key={index}
-                className="bg-card border border-border rounded-lg p-8 hover:shadow-elegant transition-all duration-300"
+                className="bg-card border border-border rounded-lg p-8 hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 group"
               >
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-primary/10 rounded-lg">
-                    <pillar.icon className="w-6 h-6 text-primary" />
+                  <div className="p-3 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors duration-300">
+                    <pillar.icon className="w-6 h-6 text-primary group-hover:scale-110 transition-transform duration-300" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-foreground mb-3">

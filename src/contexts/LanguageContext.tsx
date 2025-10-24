@@ -30,15 +30,15 @@ const translations = {
     
     // Services
     servicesTitle: "Training Services",
-    servicesSubtitle: "Comprehensive basketball and performance training tailored to your goals",
-    individual: "Individual Training",
-    individualDesc: "Focusing on the finest details in the game",
-    groupTraining: "Group Training",
-    groupDesc: "Focusing on skills, game understanding, and teamwork",
+    servicesSubtitle: "Basketball Skills Training, Performance Development & Online Coaching",
+    individual: "Basketball Skills Training",
+    individualDesc: "One-on-one basketball skill development - shooting, ball handling, footwork, and game technique",
+    groupTraining: "Group Basketball Training",
+    groupDesc: "Team-based basketball training - skills, game understanding, teamwork, and competitive play",
     performance: "Performance Training",
-    performanceDesc: "Gym training focusing on agility, strength, and conditioning",
-    onlineMeetings: "Online Meetings",
-    onlineDesc: "Remote guidance and mentorship for players anywhere",
+    performanceDesc: "Athletic performance training - strength, agility, speed, conditioning for basketball excellence",
+    onlineMeetings: "Online Coaching",
+    onlineDesc: "Remote basketball coaching and mentorship - video analysis, game planning, anywhere in the world",
     learnMore: "Learn More",
     
     // Individual Training Page
@@ -174,15 +174,15 @@ const translations = {
     
     // Services
     servicesTitle: "Träningstjänster",
-    servicesSubtitle: "Omfattande basket- och prestationsträning anpassad till dina mål",
-    individual: "Individuell Träning",
-    individualDesc: "Fokus på de finaste detaljerna i spelet",
-    groupTraining: "Gruppträning",
-    groupDesc: "Fokus på färdigheter, spelförståelse och lagarbete",
+    servicesSubtitle: "Basketfärdighetsträning, Prestationsutveckling & Onlinecoachning",
+    individual: "Basketfärdighetsträning",
+    individualDesc: "En-mot-en basketfärdighetsutveckling - skottträning, bollhantering, fotarbete och spelteknik",
+    groupTraining: "Gruppbasketträning",
+    groupDesc: "Lagbaserad basketträning - färdigheter, spelförståelse, lagarbete och tävlingsspel",
     performance: "Prestationsträning",
-    performanceDesc: "Gymträning med fokus på smidighet, styrka och kondition",
-    onlineMeetings: "Onlinemöten",
-    onlineDesc: "Fjärrvägledning och mentorskap för spelare var som helst",
+    performanceDesc: "Atletisk prestationsträning - styrka, smidighet, snabbhet, kondition för basketexcellens",
+    onlineMeetings: "Onlinecoachning",
+    onlineDesc: "Fjärrbasketcoachning och mentorskap - videoanalys, spelplanering, var som helst i världen",
     learnMore: "Läs Mer",
     
     // Individual Training Page
