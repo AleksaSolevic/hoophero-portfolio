@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ArrowLeft, Target, Eye, TrendingUp, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -8,6 +8,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 const IndividualTraining = () => {
   const { t } = useLanguage();
+  const navigate = useNavigate();
 
   const benefits = [
     { icon: Target, title: t('individualBenefit1'), description: t('individualBenefit1Desc') },
@@ -55,11 +56,18 @@ const IndividualTraining = () => {
               <p className="mb-6 leading-relaxed">
                 {t('customizedApproachDesc')}
               </p>
-              <Link to="/#contact">
-                <Button variant="secondary" size="lg">
-                  {t('contactMe')}
-                </Button>
-              </Link>
+              <Button 
+                variant="secondary" 
+                size="lg"
+                onClick={() => {
+                  navigate('/');
+                  setTimeout(() => {
+                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                  }, 100);
+                }}
+              >
+                {t('contactMe')}
+              </Button>
             </CardContent>
           </Card>
         </div>

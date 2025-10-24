@@ -1,4 +1,4 @@
-import { Dumbbell, Users, Video, MessageSquare } from "lucide-react";
+import { Target, Users, Activity, UsersRound, Video } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -9,25 +9,31 @@ const ServicesSection = () => {
   
   const services = [
     {
-      icon: Dumbbell,
-      title: t('individual'),
-      description: t('individualDesc'),
+      icon: Target,
+      title: t('individualBasketball'),
+      description: t('individualBasketballDesc'),
       link: "/individual-training",
     },
     {
       icon: Users,
-      title: t('groupTraining'),
-      description: t('groupDesc'),
+      title: t('groupBasketball'),
+      description: t('groupBasketballDesc'),
       link: "/group-training",
     },
     {
-      icon: Video,
-      title: t('performance'),
-      description: t('performanceDesc'),
+      icon: Activity,
+      title: t('individualPerformance'),
+      description: t('individualPerformanceDesc'),
       link: "/performance-training",
     },
     {
-      icon: MessageSquare,
+      icon: UsersRound,
+      title: t('groupPerformance'),
+      description: t('groupPerformanceDesc'),
+      link: "/performance-training",
+    },
+    {
+      icon: Video,
       title: t('onlineMeetings'),
       description: t('onlineDesc'),
       link: "/online-meetings",
@@ -46,7 +52,7 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {services.map((service, index) => (
             <Card 
               key={index} 
