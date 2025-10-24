@@ -56,7 +56,7 @@ const HeroSection = () => {
             </Button>
           </a>
           <a href="#services">
-            <Button variant="outline" size="xl" className="text-lg w-full sm:w-auto border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+            <Button variant="outline" size="xl" className="text-lg w-full sm:w-auto border-primary-foreground/30 text-primary-foreground bg-background/10 hover:bg-primary-foreground/10 backdrop-blur-sm">
               {t('viewPrograms')}
             </Button>
           </a>
