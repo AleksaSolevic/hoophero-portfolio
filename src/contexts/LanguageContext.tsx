@@ -22,11 +22,11 @@ const translations = {
     startJourney: "Start Your Journey",
     viewPrograms: "View Programs",
     
-    // About
-    aboutTitle: "About Me",
-    aboutP1: "Originally from Serbia, I've dedicated my life to basketball. My professional career took me across Sweden and internationally, where I competed at various levels and learned what it truly takes to succeed in this demanding sport.",
-    aboutP2: "Through years of high-level competition, I developed a deep understanding of the mental and physical requirements needed to excel. I've experienced the pressure of crucial games, the discipline of professional training, and the strategic thinking required to outperform opponents.",
-    aboutP3: "Now, I channel all that experience into helping athletes reach their full potential. Whether you're just starting out or aiming for professional levels, I bring real-world insights and proven training methods to help you elevate your game. My approach combines technical skill development, conditioning, mental preparation, and the competitive mindset needed to succeed.",
+    // About - Personal Story
+    aboutTitle: "My Story",
+    aboutP1: "My basketball journey began as a young kid in Serbia, where I fell in love with the game. From those early days shooting on outdoor courts to dreaming about playing professionally, basketball became my passion and purpose.",
+    aboutP2: "That childhood dream became reality as I pursued a professional career that took me across Sweden and internationally. I competed at various levels, faced challenges, celebrated victories, and learned what it truly takes to succeed at the highest levels of this demanding sport.",
+    aboutP3: "Through years of dedication and hard work, I experienced everything - from youth competitions to professional leagues, from small gyms to big arenas. Every step of that journey shaped who I am today and taught me invaluable lessons that I now share with my players.",
     
     // Services
     servicesTitle: "Training Services",
@@ -91,22 +91,22 @@ const translations = {
     customizedApproachDesc: "Every training session is designed specifically for your age and skill level. Whether you're just starting out or aiming for professional play, the approach is customized to help you reach your goals.",
     backHome: "Back to Home",
     
-    // Method Section
-    methodTitle: "My Basketball & Performance Method",
-    methodSubtitle: "Professional training approach focused on basketball excellence and athletic performance",
-    methodIntro: "My training methodology is built on years of professional basketball experience combined with cutting-edge performance science. I specialize in developing complete basketball players through a systematic approach that addresses technical skills, physical conditioning, and mental preparation. Every session is designed to elevate your game through focused basketball training and performance enhancement.",
-    methodPillar1: "Basketball Technical Mastery",
-    methodPillar1Desc: "Master the fundamentals and advanced skills of basketball - shooting mechanics, ball handling, footwork, defensive positioning, and offensive moves. We break down every detail to build consistent, high-level basketball technique.",
-    methodPillar2: "Basketball IQ & Game Understanding",
-    methodPillar2Desc: "Develop deep basketball knowledge - reading defenses, offensive spacing, defensive rotations, and game situations. Learn to think like a professional player and make the right decisions on the court.",
-    methodPillar3: "Performance & Athletic Development",
-    methodPillar3Desc: "Build the physical foundation for basketball excellence - strength training, explosive power, agility work, speed development, and conditioning. Programs designed specifically for basketball performance demands.",
-    methodPillar4: "Competitive Mindset & Mental Toughness",
-    methodPillar4Desc: "Cultivate the mental strength needed to compete at high levels. Learn focus techniques, pressure management, and the professional approach to training and competition that drives success in basketball.",
+    // Method Section - Coaching Approach
+    methodTitle: "My Coaching Method",
+    methodSubtitle: "How I work with players to develop complete basketball athletes",
+    methodIntro: "As a coach, I bring my professional playing experience directly into every training session. I work with players the same way I trained during my career - with intensity, attention to detail, and a clear focus on continuous improvement. My coaching philosophy is built on understanding each player's unique needs and creating a structured path to help them reach their potential.",
+    methodPillar1: "Individual-Focused Development",
+    methodPillar1Desc: "I assess each player's current level and create personalized training plans. Whether you're 10 or 30 years old, beginner or advanced, every session is tailored to challenge you appropriately and build on your strengths while addressing weaknesses.",
+    methodPillar2: "Real Game Application",
+    methodPillar2Desc: "I teach skills that directly translate to game situations. Every drill, every exercise connects to real basketball moments. We don't just practice - we prepare you for the actual demands you'll face in competition.",
+    methodPillar3: "Progressive Training System",
+    methodPillar3Desc: "My programs follow a structured progression. We master fundamentals first, then build complexity. Each skill leads to the next, creating a solid foundation that allows you to keep improving year after year.",
+    methodPillar4: "Professional Mentality",
+    methodPillar4Desc: "I teach players how to train like professionals - the work ethic, discipline, and mental approach that separates good players from great ones. This mindset applies whether you're aiming for your school team or professional leagues.",
     
     // Programs
     programsTitle: "Training Programs",
-    programsSubtitle: "Choose the program that fits your goals and commitment level",
+    programsSubtitle: "Structured coaching programs designed to develop your basketball skills and athletic performance",
     youth: "Youth Development",
     youthAge: "Ages 8-14",
     elite: "Elite Skills",
@@ -142,18 +142,18 @@ const translations = {
     copyright: "All rights reserved.",
     
     // Features
-    fundamental: "Fundamental skills training",
-    conditioning: "Age-appropriate conditioning",
-    character: "Character development",
-    reports: "Parent progress reports",
-    advanced: "Advanced skill development",
-    strength: "Strength & conditioning",
-    video: "Video analysis included",
-    collegePrep: "College prep support",
-    tournament: "Tournament preparation",
-    personalized: "Personalized training plan",
-    mental: "Mental performance coaching",
-    contract: "Contract negotiation prep",
+    fundamental: "Fundamental basketball skills coaching",
+    conditioning: "Age-appropriate physical training",
+    character: "Character & discipline development",
+    reports: "Regular progress reports",
+    advanced: "Advanced technique coaching",
+    strength: "Strength & conditioning training",
+    video: "Game video analysis sessions",
+    collegePrep: "College-level preparation",
+    tournament: "Competition preparation training",
+    personalized: "Fully customized training plan",
+    mental: "Mental toughness coaching",
+    contract: "Professional career guidance",
   },
   sv: {
     // Navbar
@@ -168,11 +168,11 @@ const translations = {
     startJourney: "Börja Din Resa",
     viewPrograms: "Visa Program",
     
-    // About
-    aboutTitle: "Om Mig",
-    aboutP1: "Ursprungligen från Serbien har jag ägnat mitt liv åt basket. Min professionella karriär tog mig över Sverige och internationellt, där jag tävlade på olika nivåer och lärde mig vad som verkligen krävs för att lyckas i denna krävande sport.",
-    aboutP2: "Genom år av tävling på hög nivå utvecklade jag en djup förståelse för de mentala och fysiska krav som krävs för att utmärka sig. Jag har upplevt pressen i avgörande matcher, disciplinen i professionell träning och det strategiska tänkande som krävs för att överträffa motståndare.",
-    aboutP3: "Nu kanaliserar jag all den erfarenheten till att hjälpa idrottare nå sin fulla potential. Oavsett om du just börjar eller siktar på professionell nivå, tar jag med verkliga insikter och beprövade träningsmetoder för att hjälpa dig höja ditt spel. Min metod kombinerar teknisk färdighetsutveckling, konditionsträning, mental förberedelse och det konkurrensinriktade mindset som krävs för att lyckas.",
+    // About - Personal Story
+    aboutTitle: "Min Historia",
+    aboutP1: "Min basketresa började som liten grabb i Serbien, där jag förälskade mig i spelet. Från de tidiga dagarna när jag sköt på utomhusplaner till att drömma om att spela professionellt, blev basket min passion och mitt syfte.",
+    aboutP2: "Den barndomsdrömmen blev verklighet när jag satsade på en professionell karriär som tog mig över Sverige och internationellt. Jag tävlade på olika nivåer, mötte utmaningar, firade segrar och lärde mig vad som verkligen krävs för att lyckas på högsta nivå i denna krävande sport.",
+    aboutP3: "Genom år av dedikation och hårt arbete upplevde jag allt - från ungdomstävlingar till professionella ligor, från små gymnastiksalar till stora arenor. Varje steg på den resan formade vem jag är idag och lärde mig ovärderliga läxor som jag nu delar med mina spelare.",
     
     // Services
     servicesTitle: "Träningstjänster",
@@ -237,22 +237,22 @@ const translations = {
     customizedApproachDesc: "Varje träningspass är utformat specifikt för din ålder och färdighetsnivå. Oavsett om du precis börjar eller siktar på professionellt spel, anpassas metoden för att hjälpa dig nå dina mål.",
     backHome: "Tillbaka Till Hem",
     
-    // Method Section
-    methodTitle: "Min Basket- & Prestationsmetod",
-    methodSubtitle: "Professionell träningsmetod fokuserad på basketexcellens och atletisk prestation",
-    methodIntro: "Min träningsmetodik bygger på år av professionell basketerfarenhet kombinerat med banbrytande prestationsvetenskap. Jag specialiserar mig på att utveckla kompletta basketspelare genom ett systematiskt tillvägagångssätt som adresserar tekniska färdigheter, fysisk kondition och mental förberedelse. Varje träningspass är utformat för att höja ditt spel genom fokuserad basketträning och prestationsförbättring.",
-    methodPillar1: "Baskettekniskt Mästerskap",
-    methodPillar1Desc: "Bemästra grunderna och avancerade färdigheter i basket - skottmekanik, bollhantering, fotarbete, defensiv positionering och offensiva drag. Vi bryter ner varje detalj för att bygga konsekvent basketteknik på hög nivå.",
-    methodPillar2: "Basket-IQ & Spelförståelse",
-    methodPillar2Desc: "Utveckla djup basketkunskap - läsa försvar, offensiv positionering, defensiva rotationer och spellägen. Lär dig tänka som en professionell spelare och fatta rätt beslut på planen.",
-    methodPillar3: "Prestation & Atletisk Utveckling",
-    methodPillar3Desc: "Bygg den fysiska grunden för basketexcellens - styrketräning, explosiv kraft, smidighetsarbete, hastighetsutveckling och kondition. Program utformade specifikt för basketprestationskrav.",
-    methodPillar4: "Tävlingsinställning & Mental Styrka",
-    methodPillar4Desc: "Kultivera den mentala styrka som krävs för att tävla på höga nivåer. Lär dig fokustekniker, presshantering och det professionella förhållningssättet till träning och tävling som driver framgång i basket.",
+    // Method Section - Coaching Approach
+    methodTitle: "Min Coachningsmetod",
+    methodSubtitle: "Hur jag arbetar med spelare för att utveckla kompletta basketidrottare",
+    methodIntro: "Som coach tar jag med mig min professionella spelarerfarenhet direkt in i varje träningspass. Jag arbetar med spelare på samma sätt som jag tränade under min karriär - med intensitet, uppmärksamhet på detaljer och ett tydligt fokus på kontinuerlig förbättring. Min coachningsfilosofi bygger på att förstå varje spelares unika behov och skapa en strukturerad väg för att hjälpa dem nå sin potential.",
+    methodPillar1: "Individuell Utveckling",
+    methodPillar1Desc: "Jag bedömer varje spelares nuvarande nivå och skapar personliga träningsplaner. Oavsett om du är 10 eller 30 år, nybörjare eller avancerad, är varje pass skräddarsytt för att utmana dig lämpligt och bygga på dina styrkor samtidigt som vi adresserar svagheter.",
+    methodPillar2: "Verklig Speltillämpning",
+    methodPillar2Desc: "Jag lär ut färdigheter som direkt översätts till spelsituationer. Varje övning, varje drill kopplas till verkliga basketögonblick. Vi tränar inte bara - vi förbereder dig för de faktiska krav du kommer möta i tävling.",
+    methodPillar3: "Progressivt Träningssystem",
+    methodPillar3Desc: "Mina program följer en strukturerad progression. Vi behärskar grunderna först, sedan bygger vi komplexitet. Varje färdighet leder till nästa, vilket skapar en solid grund som gör att du kan fortsätta förbättras år efter år.",
+    methodPillar4: "Professionell Mentalitet",
+    methodPillar4Desc: "Jag lär spelare att träna som proffs - arbetsmoral, disciplin och det mentala förhållningssätt som skiljer bra spelare från fantastiska. Denna mentalitet gäller oavsett om du siktar på ditt skollag eller professionella ligor.",
     
     // Programs
     programsTitle: "Träningsprogram",
-    programsSubtitle: "Välj det program som passar dina mål och engagemangsnivå",
+    programsSubtitle: "Strukturerade coachningsprogram utformade för att utveckla dina basketfärdigheter och atletiska prestation",
     youth: "Ungdomsutveckling",
     youthAge: "8-14 år",
     elite: "Elite Färdigheter",
@@ -288,18 +288,18 @@ const translations = {
     copyright: "Alla rättigheter förbehållna.",
     
     // Features
-    fundamental: "Grundläggande färdighetsträning",
-    conditioning: "Åldersanpassad konditionsträning",
-    character: "Karaktärsutveckling",
-    reports: "Föräldrarapporter",
-    advanced: "Avancerad färdighetsutveckling",
+    fundamental: "Grundläggande basketfärdighetscoachning",
+    conditioning: "Åldersanpassad fysisk träning",
+    character: "Karaktärs- & disciplinsutveckling",
+    reports: "Regelbundna utvecklingsrapporter",
+    advanced: "Avancerad teknikcoachning",
     strength: "Styrke- & konditionsträning",
-    video: "Videoanalys ingår",
-    collegePrep: "Förberedelse för högskola",
-    tournament: "Turneringsförberedelse",
-    personalized: "Personlig träningsplan",
-    mental: "Mental prestationscoachning",
-    contract: "Kontraktsförhandlings förberedelse",
+    video: "Spelvideoanalsessioner",
+    collegePrep: "Högskolenivåförberedelse",
+    tournament: "Tävlingsförberedelseträning",
+    personalized: "Helt anpassad träningsplan",
+    mental: "Mental tuffhetscoachning",
+    contract: "Professionell karriärvägledning",
   },
 };
 
