@@ -1,6 +1,27 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { X } from "lucide-react";
+
+// Basketball icon component
+const BasketballIcon = ({ size = 28 }: { size?: number }) => (
+  <svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    strokeWidth="2" 
+    strokeLinecap="round" 
+    strokeLinejoin="round"
+  >
+    <circle cx="12" cy="12" r="10" />
+    <path d="M12 2a10 10 0 0 0 0 20" />
+    <path d="M12 2a10 10 0 0 1 0 20" />
+    <path d="M2 12h20" />
+    <path d="M6.34 6.34C8.3 8.3 10 11 10 12s-1.7 3.7-3.66 5.66" />
+    <path d="M17.66 6.34C15.7 8.3 14 11 14 12s1.7 3.7 3.66 5.66" />
+  </svg>
+);
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "./ui/button";
 import ThemeColorSwitcher from "./ThemeColorSwitcher";
@@ -102,7 +123,7 @@ const Navbar = () => {
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden text-foreground hover:text-primary transition-colors"
           >
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
+            {isOpen ? <X size={28} /> : <BasketballIcon size={28} />}
           </button>
         </div>
 
