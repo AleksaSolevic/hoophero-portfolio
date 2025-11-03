@@ -2,18 +2,21 @@ import { useEffect, useState } from "react";
 import { Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+// Initialize dark mode immediately on load
+if (typeof window !== 'undefined') {
+  const saved = localStorage.getItem('theme');
+  if (saved !== 'light') {
+    document.documentElement.classList.add('dark');
+  }
+}
+
 const ThemeColorSwitcher = () => {
   const [isDark, setIsDark] = useState(() => {
     if (typeof window !== 'undefined') {
-      // Check if user has a preference saved, otherwise default to dark
       const saved = localStorage.getItem('theme');
-      if (saved === 'light') {
-        return false;
-      }
-      // Default to dark mode
-      return true;
+      return saved !== 'light'; // Default to dark unless explicitly set to light
     }
-    return true; // Default to dark
+    return true;
   });
 
   useEffect(() => {
