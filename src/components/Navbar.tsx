@@ -121,7 +121,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-foreground hover:text-primary transition-colors"
+            className="md:hidden text-foreground hover:text-primary transition-all duration-300 p-2 rounded-lg hover:bg-accent/50 active:scale-95"
           >
             {isOpen ? <X size={28} /> : <BasketballIcon size={28} />}
           </button>
@@ -129,38 +129,38 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-6 border-t border-border bg-background">
-            <div className="flex flex-col gap-4">
+          <div className="md:hidden py-6 border-t border-border bg-background/98 backdrop-blur-sm shadow-lg rounded-b-2xl">
+            <div className="flex flex-col gap-2">
               <button
                 onClick={() => scrollToSection("about")}
-                className="text-foreground hover:text-primary transition-colors font-medium text-left py-2"
+                className="text-foreground hover:text-primary hover:bg-accent/50 transition-all duration-200 font-medium text-center py-3 px-4 rounded-lg mx-2"
               >
                 {t("navStory")}
               </button>
               <button
                 onClick={() => scrollToSection("method")}
-                className="text-foreground hover:text-primary transition-colors font-medium text-left py-2"
+                className="text-foreground hover:text-primary hover:bg-accent/50 transition-all duration-200 font-medium text-center py-3 px-4 rounded-lg mx-2"
               >
                 {t("navMethod")}
               </button>
               <button
                 onClick={() => scrollToSection("services")}
-                className="text-foreground hover:text-primary transition-colors font-medium text-left py-2"
+                className="text-foreground hover:text-primary hover:bg-accent/50 transition-all duration-200 font-medium text-center py-3 px-4 rounded-lg mx-2"
               >
                 {t("navServices")}
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="text-foreground hover:text-primary transition-colors font-medium text-left py-2"
+                className="text-foreground hover:text-primary hover:bg-accent/50 transition-all duration-200 font-medium text-center py-3 px-4 rounded-lg mx-2"
               >
                 {t("navContact")}
               </button>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center justify-center gap-2 mt-2 pt-4 border-t border-border/50 mx-2">
                 <Button
                   onClick={toggleLanguage}
                   variant="outline"
                   size="sm"
-                  className="w-fit font-semibold"
+                  className="font-semibold"
                 >
                   {language === "en" ? "SV" : "EN"}
                 </Button>
