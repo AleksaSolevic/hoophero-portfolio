@@ -129,38 +129,38 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-6 border-t border-border bg-background/98 backdrop-blur-sm shadow-lg rounded-b-2xl">
+          <div className="md:hidden py-6 border-t border-primary/20 bg-card/95 backdrop-blur-md shadow-2xl rounded-b-3xl animate-fade-in">
             <div className="flex flex-col gap-2">
               <button
                 onClick={() => scrollToSection("about")}
-                className="text-foreground hover:text-primary hover:bg-accent/50 transition-all duration-200 font-medium text-center py-3 px-4 rounded-lg mx-2"
+                className="text-card-foreground hover:text-primary hover:bg-primary/10 transition-all duration-200 font-semibold text-center py-3.5 px-5 rounded-xl mx-3 active:scale-[0.98]"
               >
                 {t("navStory")}
               </button>
               <button
                 onClick={() => scrollToSection("method")}
-                className="text-foreground hover:text-primary hover:bg-accent/50 transition-all duration-200 font-medium text-center py-3 px-4 rounded-lg mx-2"
+                className="text-card-foreground hover:text-primary hover:bg-primary/10 transition-all duration-200 font-semibold text-center py-3.5 px-5 rounded-xl mx-3 active:scale-[0.98]"
               >
                 {t("navMethod")}
               </button>
               <button
                 onClick={() => scrollToSection("services")}
-                className="text-foreground hover:text-primary hover:bg-accent/50 transition-all duration-200 font-medium text-center py-3 px-4 rounded-lg mx-2"
+                className="text-card-foreground hover:text-primary hover:bg-primary/10 transition-all duration-200 font-semibold text-center py-3.5 px-5 rounded-xl mx-3 active:scale-[0.98]"
               >
                 {t("navServices")}
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="text-foreground hover:text-primary hover:bg-accent/50 transition-all duration-200 font-medium text-center py-3 px-4 rounded-lg mx-2"
+                className="text-card-foreground hover:text-primary hover:bg-primary/10 transition-all duration-200 font-semibold text-center py-3.5 px-5 rounded-xl mx-3 active:scale-[0.98]"
               >
                 {t("navContact")}
               </button>
-              <div className="flex items-center justify-center gap-2 mt-2 pt-4 border-t border-border/50 mx-2">
+              <div className="flex items-center justify-center gap-3 mt-3 pt-5 border-t border-primary/20 mx-3">
                 <Button
                   onClick={toggleLanguage}
                   variant="outline"
                   size="sm"
-                  className="font-semibold"
+                  className="font-semibold border-primary/30"
                 >
                   {language === "en" ? "SV" : "EN"}
                 </Button>
